@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>เว็บไซต์แนะนำตัวเอง</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body{
+      font-family: 'Kanit', sans-serif;
+      background: #f4f6f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* ===== Header ===== */
+    header{
+      background: linear-gradient(135deg, #75bdf4, #5c82ad);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1{
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    header p{
+      font-size: 18px;
+    }
+
+    /* ===== Navigation ===== */
+    nav{
+      background: #2b2d42;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav ul{
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    nav a{
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    nav a:hover{
+      color: #ffd60a;
+    }
+
+    /* ===== Body ===== */
+    .container{
+      width: 90%;
+      max-width: 1100px;
+      margin: 40px auto;
+    }
+
+    section{
+      background: white;
+      margin-bottom: 25px;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    section h2{
+      color: #0e0506;
+      margin-bottom: 15px;
+    }
+
+    .profile{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 25px;
+    }
+
+    .profile img{
+      width: 220px;
+      border-radius: 15px;
+      border: 5px solid #0f0708;
+    }
+
+    .skills ul{
+      margin-left: 20px;
+    }
+
+    /* ===== Footer ===== */
+    footer{
+      background: #2b2d42;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    /* ===== Responsive ===== */
+    @media(max-width:768px){
+      .profile{
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav ul{
+        flex-direction: column;
+        align-items: center;
+      }
+
+      header h1{
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>เว็บไซต์แนะนำตัวเอง</h1>
+    <p>ยินดีต้อนรับสู่เว็บไซต์ส่วนตัว</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#about">เกี่ยวกับฉัน</a></li>
+      <li><a href="#skills">ทักษะ</a></li>
+      <li><a href="#contact">ติดต่อ</a></li>
+    </ul>
+  </nav>
+
+  <!-- Body -->
+  <div class="container">
+
+    <!-- About -->
+    <section id="about">
+      <h2>เกี่ยวกับฉัน</h2>
+
+      <div class="profile">
+        <!-- แนะนำให้เปลี่ยน URL รูปภาพตรง src เป็นรูปจริงของคุณในภายหลังครับ -->
+        <img src="S__23068676.jpg" alt="profile">
+
+        <div>
+          <h3>นางสาวภัทราวดี สุวรรณเวียง</h3>
+          <p>
+            ระดับปวส.2/1 แผนกวิชาเทคโนโลยีสารสนเทศ
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="skills">
+      <h2>ทักษะความสามารถ</h2>
+
+      <ul>
+        <li>HTML / CSS / JavaScript</li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>ช่องทางติดต่อ</h2>
+
+      <p>Email : 68319010052@swdtcmail.com</p>
+      <p>Facebook : Pattharawadee Suwannawiang</p>
+      <p>โทรศัพท์ : 061-343-4143</p>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      © 2026 เว็บไซต์แนะนำตัวเอง | พัฒนาโดย นางสาวภัทราวดี สุวรรณเวียง
+    </p>
+  </footer>
+
+</body>
+</html>
