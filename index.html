@@ -1,1 +1,192 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>เว็บไซต์แนะนำตัวเอง</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Sarabun',sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+    color:#333;
+}
+
+header{
+    background:linear-gradient(135deg,#4facfe,#00f2fe);
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+header img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    border:5px solid white;
+    object-fit:cover;
+    margin-bottom:15px;
+}
+
+nav{
+    background:#222;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#00f2fe;
+}
+
+section{
+    max-width:1000px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    margin-bottom:25px;
+    border-radius:15px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+h2{
+    color:#0077cc;
+    margin-bottom:15px;
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.skill{
+    background:#0077cc;
+    color:white;
+    padding:8px 15px;
+    border-radius:20px;
+}
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.project{
+    background:#f9f9f9;
+    padding:20px;
+    border-radius:10px;
+    border-left:5px solid #0077cc;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="S__23068676.jpg" alt="Profile">
+    <h1>ภัทราวดี สุวรรณเวียง</h1>
+    <p>นักศึกษาสาขาเทคโนโลยีสารสนเทศ</p>
+</header>
+
+<nav>
+    <a href="#about">เกี่ยวกับฉัน</a>
+    <a href="#education">การศึกษา</a>
+    <a href="#skills">ทักษะ</a>
+    <a href="#projects">ผลงาน</a>
+    <a href="#contact">ติดต่อ</a>
+</nav>
+
+<section>
+
+    <div class="card" id="about">
+        <h2>เกี่ยวกับฉัน</h2>
+        <p>
+            สวัสดีค่ะ ดิฉันชื่อ ภัทราวดี
+            กำลังศึกษาด้านเทคโนโลยีสารสนเทศ
+            มีความสนใจด้านการพัฒนาเว็บไซต์ การออกแบบระบบ
+            และการเขียนโปรแกรม
+        </p>
+    </div>
+
+    <div class="card" id="education">
+        <h2>ประวัติการศึกษา</h2>
+        <p><strong>ปวส. สาขาเทคโนโลยีสารสนเทศ</strong></p>
+        <p>วิทยาลัยเทคนิคสว่างแดนดิน</p>
+        <p>ปีการศึกษา 2568 - ปัจจุบัน</p>
+    </div>
+
+    <div class="card" id="skills">
+        <h2>ทักษะ</h2>
+        <div class="skills">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">PHP</div>
+            <div class="skill">MySQL</div>
+            <div class="skill">Python</div>
+        </div>
+    </div>
+
+    <div class="card" id="projects">
+        <h2>ผลงาน</h2>
+        <div class="projects">
+
+            <div class="project">
+                <h3>เว็บไซต์ร้านกาแฟ</h3>
+                <p>พัฒนาเว็บไซต์ร้านกาแฟพร้อมระบบสั่งซื้อออนไลน์</p>
+            </div>
+
+            <div class="project">
+                <h3>เว็บไซต์แผนกวิชาแผนกวิชาเทคโนโลยีสารสนเทศ</h3>
+                <p>พัฒนาระบบจัดเก็บข้อมูลนักเรียนและผลการเรียน</p>
+            </div>
+
+            <div class="project">
+                <h3>เว็บไซต์โปรไฟล์</h3>
+                <p>ออกแบบเว็บไซต์แนะนำตัวเองแบบ Responsive</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="card" id="contact">
+        <h2>ติดต่อ</h2>
+        <p>โทร : 0613434143</p>
+        <p>Facebook : Pattharawadee Suwannawiang</p>
+        <p>Instagram : ant_4925</p>
+    </div>
+
+</section>
+
+<footer>
+    <p>© 2026 เว็บไซต์แนะนำตัวเอง โดยนางสาวภัทราวดี สุวรรณเวียง</p>
+</footer>
+
+</body>
+</html>
 
